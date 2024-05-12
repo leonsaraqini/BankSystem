@@ -18,4 +18,4 @@
 
 -Run the class Main that is located in the subfolder "src" of the already opened "BankSystem" folder.
 
-<b>Note:</b> You won't be able to perfom from 2-7 tasks before creating a bank.
+<b>Note:</b> You won't be able to perfom from 2-8 tasks before creating a bank.
