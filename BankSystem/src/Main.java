@@ -9,7 +9,7 @@ public class Main {
     public static void options(){
         System.out.println("\nEnter one of the options avaliable: \n\n" +
                 "- Create a bank (1),\n" + "- Create an account (2),\n" +
-                "- Perform transaction (3)\n" + "- Check transactions of an account (4)\n" +
+                "- Perform transaction (3)\n" + "- Check transactions for an account (4)\n" +
                 "- Check balance of an account (5)\n" + "- See list of accounts (6)\n" +
                 "- Check bank total transaction fee amount (7)\n" + "- Check bank total transfer amount (8)\n\n" +
                 "If you want to exit the app press 0");
@@ -54,6 +54,9 @@ public class Main {
                     System.out.println("Enter a name of the bank:");
 
                     bank = new Bank(scanner.next());
+
+                    bank.addAcount(new Account("John"));
+                    bank.addAcount(new Account("Jane"));
 
                     Thread.sleep(1000);
                     System.out.println("||| Success! New bank created |||");

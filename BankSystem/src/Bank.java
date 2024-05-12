@@ -80,16 +80,16 @@ public class Bank{
     }
 
     public void getAllAccounts(){
-        System.out.printf("Id %-20s Amount\n", "Name");
+        System.out.printf("Id  %-20s\n", "Name");
 
         accounts.values()
                 .stream()
-                .filter(a -> a.getName().contains("UnknownBankId"))
+                .filter(a -> !a.getName().contains("UnknownBankId"))
                 .forEach(System.out::println);
     }
 
     public void getAllAccounts(int id){
-        System.out.printf("Id %-20s Amount\n", "Name");
+        System.out.printf("Id  %-20s\n", "Name");
         accounts.values()
                 .stream()
                 .filter(a -> a.getId() != id)

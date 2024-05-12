@@ -59,6 +59,7 @@ public class Account{
 
     public double getAmountOfTransactionFees(){
         return transactions.stream()
+                .filter(t -> t.getReason() == TransactionReason.WITHDRAWAL)
                 .mapToDouble(t -> t.calculateAdditionalFee())
                 .sum();
     }

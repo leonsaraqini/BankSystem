@@ -38,7 +38,7 @@ public abstract class Transaction{
     }
 
     private String getTransactionReasonName(){
-        return originatingId != destinationId ? reason.name() : reason.name() + "FROM SAME ACCOUNT";
+        return originatingId != destinationId ? reason.name() : reason.name() + " FROM SAME ACCOUNT";
     }
 
     private double getFullAmountText(){
