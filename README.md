@@ -2,7 +2,7 @@
 
 - Bank System is a console application written in Java using IntelliJ IDEA.
 
-- Through the application you can perform the following tasks:
+Through the application you can perform the following tasks:
 <ol>
   <li>Creating a bank</li>
   <li>Creating an account</li>
